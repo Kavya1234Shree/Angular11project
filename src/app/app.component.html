@@ -1,0 +1,41 @@
+
+<input type="checkbox" id="check">
+<header>
+    <label for="check">
+  <i class="fas fa-bars" id="sidebar-btn"></i>
+    </label>
+    <div class="left-area">
+        <h3>Aroha<span>Group</span></h3>
+        <a [routerLink]="['']"><img src="assets/aroha.png" class="logo-image"></a>
+    </div>
+    <div class="dropdown">
+        <button onclick="uFunction()" class="dropbtn"><i class="fas fa-address-book"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Profile</a>
+          <a href="#">Logout</a>
+         
+        </div>
+      </div>
+    <!-- <div class="dropdown" style="float:right;">
+        <button class="dropbtn"><i class="fas fa-address-book"></i></button>
+        <div class="dropdown-content" >
+          <a href="#">Profile</a>
+          <a href="#">LogOut</a>
+        </div>
+      </div> -->
+</header>
+
+<div class="sidebar">
+    <!-- <div>
+        <img src="assets/aroha.png" class="profile_image" alt="">
+        <h4>Aroha</h4>
+    </div> -->
+    <a [routerLink]="['']" routerLinkActive="active" ><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+    <a [routerLink]="['/adduserd']" routerLinkActive="active" ><i class="fas fa-cogs"></i><span>Add User</span></a>
+    <a [routerLink]="['/listuserd']" routerLinkActive="active" ><i class="fas fa-table"></i><span>User List</span></a>
+    
+
+</div>
+<div >
+<router-outlet></router-outlet>
+</div>

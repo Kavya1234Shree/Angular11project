@@ -1,0 +1,2 @@
+*aroha-update filter=lfs diff=lfs merge=lfs -text
+*aroha-update.psd filter=lfs diff=lfs merge=lfs -text
